@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Mar 08 19:33:40 CET 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-017f-6ace-eb72-000006ad8e00 
+on database directory C:\Users\Raúl moya\eclipse-workspace\locker2\bdatos with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@659e0bfd 
+Loaded from file:/C:/Users/Ra%c3%bal%20moya/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.2+7-67
+user.dir=C:\Users\Raúl moya\eclipse-workspace\locker2
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
