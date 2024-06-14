@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="paa">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+            <property name="javax.persistence.jdbc.url"    value="jdbc:derby:bdatos;create=true"/>
+          
+       <!--  	<property name="javax.persistence.jdbc.driver" value="net.ucanaccess.jdbc.UcanaccessDriver" /> 
+           	<property name="javax.persistence.jdbc.url" value="jdbc:ucanaccess://bdatos/PAA_Servicios.mdb" /> -->
+            <!--
+            La siguiente propiedad especifica qué pasa cuando se arranca la unidad de persistencia:
+
+            Si toma el valor 'create', al establecer la conexión con la base de datos el proveedor JPA se asegurará de
+            crear o modificar las tablas necesarias para responder a las definiciones de las entidades JPA existentes en
+            el programa; si las tablas ya existen se respetarán, incluyendo los datos que puedan contener.
+
+            Si toma el valor 'drop-and-create', se eliminarán todas las tablas existentes, INCLUYENDO LOS DATOS que
+            puedan contener, y posteriormente se crearán de nuevo como en el caso anterior. Este modo de operación
+            puede ser útil para realizar pruebas unitarias, asegurando que el estado inicial sea siempre vacío.
+            -->
+           <!--   <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+
+            <!-- Propiedades específicas de EclipseLink: en caso de usar otro proveedor serán ignoradas. -->
+            <property name="eclipselink.logging.level" value="INFO"/>
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
+            <property name="eclipselink.logging.logger" value="JavaLogger"/>
+        </properties>
+    </persistence-unit>
+</persistence>
